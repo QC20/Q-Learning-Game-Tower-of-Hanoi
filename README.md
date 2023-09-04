@@ -1,6 +1,7 @@
 # Tower of Hanoi Game with Q-learning
+The Tower of Hanoi Game Prototype serves as an interactive educational tool designed to intuitively convey the principles of Q-learning and reinforcement learning. It's a hands-on approach to help people understand these complex concepts through gameplay and interaction.
 
-![Tower of Hanoi](tower_of_hanoi.gif)
+![ToH](https://github.com/QC20/Tower-of-Hanoi-Learning-Game/assets/36644388/a472ee1d-0848-4f00-b57b-32017ce01e23)
 
 ## Introduction
 
