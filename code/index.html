@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#F2D388" onload="init();" onselectstart="return false" oncontextmenu="return false" data-new-gr-c-s-check-loaded="14.1121.0" data-gr-ext-installed="">
+    <form name="hanoi">
+        <div id="title" class="title">Tower of Hanoi</div>
+        <div id="tower1" class="container" onmousemove="indexTo=1">
+            <div id="verttower1" class="towervert"></div>
+            <div id="horiztower1" class="towerhoriz"></div>
+            <div class="tower">Tower 1</div>
+        </div>
+        <div id="tower2" class="container" onmousemove="indexTo=2">
+            <div id="verttower2" class="towervert"></div>
+            <div id="horiztower2" class="towerhoriz"></div>
+            <div class="tower">Tower 2</div>
+        </div>
+        <div id="tower3" class="container" onmousemove="indexTo=3">
+            <div id="verttower3" class="towervert"></div>
+            <div id="horiztower3" class="towerhoriz"></div>
+            <div class="tower">Tower 3</div>
+        </div>
+        <div id="disk1" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 1"></div>
+        <div id="disk2" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 2"></div>
+        <div id="disk3" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 3"></div>
+        <div id="disk4" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 4"></div>
+        <div id="disk5" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 5"></div>
+        <div id="disk6" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 6"></div>
+        <div id="disk7" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 7"></div>
+        <div id="disk8" class="disk" onmousedown="initializeDrag(this,event)" onmouseup="dropDisk(this)" title="Disk 8"></div>
+        <div id="settings" class="settings-panel">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Number of disks</td>
+                        <td>
+                            <select name="diskno" onchange="newGame(this)" onclick="prevIndex=this.options.selectedIndex">
+                                <option value="7" selected="">3</option>
+                                <option value="15">4</option>
+                                <option value="31">5</option>
+                                <option value="63">6</option>
+                                <option value="127">7</option>
+                                <option value="255">8</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minimum no. of moves&nbsp;&nbsp;</td>
+                        <td><input name="minmove" style="border:none" size="3" value="255" readonly=""></td>
+                    </tr>
+                    <tr>
+                        <td>Your no. of moves</td>
+                        <td><input name="yourmove" style="border:none" size="3" value="0" readonly=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="button" name="btnIns" value="How To Play" onclick="displayIns()">
+                            <input type="button" name="btnRes" value="Restart" onclick="newGame(document.hanoi.diskno)">
+                            <input type="button" name="btnUndo" value="Undo" onclick="unDo(this)" disabled="disabled">
+                            <input type="button" name="btnSolve" value="Solve" onclick="solve(this)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&nbsp;</p>
+            <p>This game was created by Jonas Kjeldmand Jensen with the intention of providing an intuitive insight into Q-learning through a practical demonstration. The primary objective of developing this game was to enhance personal comprehension of reinforcement algorithms, thus enabling more effective explanations to non-expert users through real-world examples.</p>
+        </div>
+    </form>
+</body>
+</html>
