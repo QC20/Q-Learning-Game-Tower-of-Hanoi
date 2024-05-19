@@ -1,4 +1,4 @@
-    // Global variables initialization
+// Global variables initialization
 var delay = 200; // Delay in milliseconds
 var drag = false; // Flag for dragging
 var objDisk = null; // Reference to the disk being dragged

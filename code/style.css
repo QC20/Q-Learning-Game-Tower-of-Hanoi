@@ -1,10 +1,59 @@
-table {font:bold 15px Bodoni}
-p {font:normal 13px Bodoni,Garamond}
-input,select {font:normal 14px Bodoni,Bodoni}
-select {width:40px}
-a {font-weight:bold}
-.tower {position:absolute;visibility:visible;left:77px;top:184px;font:bold 14px Bodoni}
-.container {position:absolute;visibility:visible;}
-.towervert {position:absolute;visibility:visible;border:1px solid black;background-color:black}
-.towerhoriz {position:absolute;visibility:visible;border:1px solid black;font-size:1px;background-color:black}
-.disk {position:absolute;visibility:visible;border:1px solid black}
+/* General Styles */
+body {
+    font-family: Bodoni, serif;
+  }
+  
+  /* Typography */
+  table {
+    font: bold 15px Bodoni, serif;
+  }
+  
+  p {
+    font: normal 13px Bodoni, Garamond, serif;
+  }
+  
+  input,
+  select {
+    font: normal 14px Bodoni, serif;
+  }
+  
+  select {
+    width: 40px;
+  }
+  
+  a {
+    font-weight: bold;
+  }
+  
+  /* Positioning and Visibility */
+  .tower,
+  .container,
+  .towervert,
+  .towerhoriz,
+  .disk {
+    position: absolute;
+    visibility: visible;
+  }
+  
+  /* Specific Classes */
+  .tower {
+    left: 77px;
+    top: 184px;
+    font: bold 14px Bodoni, serif;
+  }
+  
+  .towervert {
+    border: 1px solid black;
+    background-color: black;
+  }
+  
+  .towerhoriz {
+    border: 1px solid black;
+    font-size: 1px;
+    background-color: black;
+  }
+  
+  .disk {
+    border: 1px solid black;
+  }
+  
